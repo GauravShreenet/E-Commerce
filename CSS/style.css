@@ -1,0 +1,59 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+
+}
+
+.wrapper {
+
+}
+
+h1 {
+    background: blue;
+    color: white;
+}
+
+header {
+    background: red;
+}
+
+.banner{
+    min-height: 20vh;
+    background: linear-gradient(130deg, purple, orange);
+
+}
+
+.off1 {
+    background: rgb(192, 228, 112);
+}
+
+.off2{
+    background: rgb(181, 98, 141);
+}
+
+.side-menu{
+    background: rgb(229, 156, 66);
+}
+
+.recent{
+    background: rgb(176, 84, 51);
+}
+
+.tags{
+    background: rgb(29, 207, 213);
+}
+
+.main {
+ background-color: antiquewhite;
+}
+
+.product1{
+    background: rgb(122, 228, 112);
+}
+
+footer{
+    background: rgb(0, 0, 0);
+}
