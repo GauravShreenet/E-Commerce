@@ -8,52 +8,99 @@ body {
 }
 
 .wrapper {
+    display: grid;
+    gap: 5px;
+    grid-template-columns: 1fr 2fr 1fr;
+    grid-template-areas: 
+    "h1 h1 h1"
+    "header header header"
+    "banner banner off1"
+    "banner banner off2"
+    "banner banner off2"
+    "sidemenu main main"
+    "recent main main"
+    "tags main main"
+    "footer footer footer";
+}
 
+.wrapper > * {
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    padding: 1rem;
 }
 
 h1 {
     background: blue;
     color: white;
+    grid-area: h1;
 }
 
 header {
     background: red;
+    grid-area: header;
 }
 
 .banner{
     min-height: 20vh;
     background: linear-gradient(130deg, purple, orange);
-
+    grid-area: banner;
 }
 
 .off1 {
     background: rgb(192, 228, 112);
+    grid-area: off1;
 }
 
 .off2{
     background: rgb(181, 98, 141);
+    grid-area: off2;
 }
 
 .side-menu{
     background: rgb(229, 156, 66);
+    grid-area: sidemenu;
 }
 
 .recent{
     background: rgb(176, 84, 51);
+    grid-area: recent;
 }
 
 .tags{
     background: rgb(29, 207, 213);
+    grid-area: tags;
 }
 
 .main {
  background-color: antiquewhite;
+ grid-area: main;
 }
 
 .product1{
     background: rgb(122, 228, 112);
+    grid-area: product1;
 }
 
 footer{
     background: rgb(0, 0, 0);
+    grid-area: footer;
+}
+
+@media (max-width: 1024px) { 
+    .wrapper {
+        display: grid;
+        gap: 5px;
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-areas: 
+        "h1 h1"
+        "header header"
+        "off1 off2"
+        "banner banner"
+        "sidemenu sidemenu"
+        "main main"
+        "recent tags"
+        "footer footer";
+    }
+    
 }
